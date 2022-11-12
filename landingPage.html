@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body>
     <!--a navigation bar w/ a link for resources and language-->
     <div class= "navbar">
         <!--pressing the logo takes us back to the landing page-->
-         <div class="logo"><a href>"LOGO"</a> <!--will replace this part with our logo--></div> 
+         <div class="logo"><a href="index.html">LOGO</a> <!--will replace this part with our logo--></div> 
           <a href = "#">Resources</a>
           <a href = "#">Language</a>
     </div>
@@ -20,16 +21,31 @@
       <h2>
         Welcome to ____
       </h2>
-      <p>
-        <br>
-        <ul>
-          <li><a href="#">Take our quick self-assessment</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Crisis Line</a></li>
-          <li><a href="#">Speak with a Counselor</a></li>
-        </ul>
+      <div class="offerings">
+          <button class="open-survey" id="survey">Take our quick self-assessment</button>
+          <button class="resource"><a href="#">Resources</a></button>
+          <button class="resource"><a href="#">Crisis Line</a>/button>
+          <button class="resource"><a href="#">Speak with a Counselor</a></button>
+        
         <img src="#" alt="img png" width="40" height="40"> 
-      </p>
+      </div>
+<!--write HTML code for the popup form here-->
+      <div class="form-popup">
+        <!--what we need: the survey questions-->
+        <form action = "/actionpage.php" class="container">
+          <div class="q1">
+            <label for="age"><p>Are you 18 or older?</p></label>
+            <input name="age" type="radio">Yes<br>
+            <input name="age" type="radio">No<br> 
+          </div>
+          <div class="q2">
+            <label for="age"><p>Are you 18 or older?</p></label>
+            <input id="age" name="age" type="radio">Yes<br>
+            <input id="age" name="age" type="radio">No<br> 
+          </div>
+          
+
+      </div>
 
 
     </div>
