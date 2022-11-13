@@ -1,5 +1,14 @@
 html, body {
   height: 100%;
   width: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
 }
 
