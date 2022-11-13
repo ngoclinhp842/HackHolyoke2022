@@ -110,7 +110,12 @@ h2{
 
 .form-popup{
   width: 400px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
 }
+
 
 .close{
   padding: 10px 60px;
