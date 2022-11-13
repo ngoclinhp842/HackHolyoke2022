@@ -1,5 +1,62 @@
-html, body {
-  height: 100%;
-  width: 100%;
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
+body {
+  height: auto;
+  width: auto;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar{
+  position: sticky;
+  background-color: #655d8a;
+  overflow: hidden;
+}
+
+ul a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+
+}
+
+.navbar a:hover{
+
+  background-color: #d885a3;
+  color: black;
+  list-style-type: none;
+
+}
+
+
+
+
+
+.floatleft{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: larger;
+
+
+}
+
+.floatright{
+  float:right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.welcome{
+  background-color: #7897ab;
+}
