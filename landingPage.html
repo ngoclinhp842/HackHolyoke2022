@@ -29,22 +29,75 @@
         
         <img src="#" alt="img png" width="40" height="40"> 
       </div>
+
 <!--write HTML code for the popup form here-->
       <div class="form-popup">
         <!--what we need: the survey questions-->
         <form action = "/actionpage.php" class="container">
           <div class="q1">
             <label for="age"><p>Are you 18 or older?</p></label>
-            <input name="age" type="radio">Yes<br>
-            <input name="age" type="radio">No<br> 
+            <input name="age" type="radio" value = "yes">Yes<br>
+            <input name="age" type="radio" value = "no">No<br> 
+            <input name="age" type="radio" value = "notsay">Prefer not to answer<br> 
           </div>
-          <div class="q2">
-            <label for="age"><p>Are you 18 or older?</p></label>
-            <input id="age" name="age" type="radio">Yes<br>
-            <input id="age" name="age" type="radio">No<br> 
-          </div>
-          
 
+          <div class="q2">
+            <label for="self-harm"><p>Do you have the urge to self-harm?</p></label>
+            <input id="self-harm" name="self-harm" type="radio" value = "yes">Yes<br>
+            <input id="self-harm" name="self-harm" type="radio" value = "no">No<br> 
+          </div>
+
+          <div class="q3">
+            <label for="suicide"><p>Are you having thoughts about ending your life?</p></label>
+            <input id="suicide" name="suicide" type="radio" value = "yes">Yes<br>
+            <input id="suicide" name="suicide" type="radio" value = "no">No<br> 
+          </div>
+
+          <div class="q4">
+            <label for="sexualHarm"><p>Is someone in your life (family, partner, etc.) causing you physical, 
+              emotional, or sexual harm?</p></label>
+            <input id="sexualHarm" name="sexualHarm" type="radio" value = "yes">Yes<br>
+            <input id="sexualHarm" name="sexualHarm" type="radio" value = "no">No<br> 
+          </div>
+
+          <div class="q5">
+            <label for="substance"><p>Do you struggle with substance abuse?</p></label>
+            <input id="substance" name="substance" type="radio" value = "yes">Yes<br>
+            <input id="substance" name="substance" type="radio" value = "no">No<br> 
+          </div>
+
+          <div class="q6">
+            <label for="gender"><p>What is your gender identity?</p></label>
+            <input id="gender" name="gender" type="radio" value = "ciswoman">Cis Woman<br>
+            <input id="gender" name="gender" type="radio" value = "cisman" >Cis Man<br> 
+            <input id="gender" name="gender" type="radio" value = "nonbinary" >Transgender/Nonbinary<br> 
+            <input id="gender" name="gender" type="radio" value = "notsay">Prefer not to say<br>
+            <input id="gender" name="gender" type="radio" value = "notsure">Not sure<br> 
+          </div>
+
+          <div class="q7">
+            <label for="sexuality"><p>What is your sexuality?</p></label>
+            <input id="sexuality" name="sexuality" type="radio" value = "straight">Heterosexual<br>
+            <input id="sexuality" name="sexuality" type="radio" value = "other">Other<br> 
+            <input id="sexuality" name="sexuality" type="radio" value = "notsay">Prefer not to say<br>
+            <input id="sexuality" name="sexuality" type="radio" value = "notsure">Not sure<br>
+          </div>
+
+          <div class="q8">
+            <div class="selectBox" onclick="showCheckboxes()">
+              <label for="sexuality"><p>Do you need support for a specific mental illness? Please select as many of the following options as apply:</p></label>
+            </div>
+            <div id="checkboxes">
+                <input type="checkbox" id="one" value = "depression" />Depression</label>
+                <input type="checkbox" id="two" value = "anxiety"/>Anxiety</label>
+                <input type="checkbox" id="three" value = "ptsd"/>PTSD</label>
+                <input type="checkbox" id="four" value = "disorderedEating"/>Disordered Eating</label>
+                <input type="checkbox" id="five" value = "OCD"/>OCD</label>
+                <input type="checkbox" id="five" value = "notsure"/>Not sure</label>
+            </div>
+          </div>
+
+        </form>
       </div>
 
 
@@ -57,7 +110,7 @@
         <p>
             
             <br>
-            ____ is a student-created platform that strives to make mental-health access and resources to be more accessible for everyone. We have provided a number of resources for people of all ages, demographics, and genders. Our quick self-assessment can provide you a starting point on which resource is best for you!
+            Piece of Mind is a student-created platform that strives to make mental-health access and resources to be more accessible for everyone. We have provided a number of resources for people of all ages, demographics, and genders. Our quick self-assessment can provide you a starting point on which resource is best for you!
         </p>
 
     </div>
