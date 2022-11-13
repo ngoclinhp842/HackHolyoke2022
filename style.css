@@ -1,7 +1,18 @@
-html{
-  font-family: "Poppins", sans-serif;
-  margin: 0;
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: normal;
+  font-style: normal;
+  font-stretch: normal;
+  /* text-align: center; */
+  margin: 0px 0px 0px 0px;
+  background-color: #f2e2e7;
 }
+
 
 body {
   height: auto;
@@ -15,47 +26,74 @@ body {
   position: sticky;
   background-color: #655d8a;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar a{
+  padding: 8px;
 }
 
 ul a {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   color: white;
+  display: flex;
+  text-decoration: none;
 
 }
 
-.navbar a:hover{
 
+
+.navbar a:hover{
   background-color: #d885a3;
   color: black;
   list-style-type: none;
+  justify-content: space-between;
+  border-radius: 25px;
 
 }
+
 
 
 .floatleft{
   float: left;
-  display: block;
+  display: flex;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 30px;
   text-decoration: none;
   font-size: larger;
-
+  list-style: none;
 
 }
 
 .floatright{
   float:right;
-  display: block;
+  display: flex;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: large;
+  list-style: none;
+  padding: 14px 30px;
+  
+
 }
+
+
+
+
 
 .welcome{
   background-color: #7897ab;
+  margin: 35px;
+  padding: 10px 30px 30px;
+  border-radius: 25px;
+}
+
+h2{
+  color:white;
 }
 
 .submit{
@@ -83,5 +121,27 @@ ul a {
   font-size: 22px;
   font-weight: 500;
   border-radius: 30px;
+}
 
+.about{
+  background-color: #655d8a;
+  margin:35px;
+  padding:10px 30px 30px;
+  border-radius: 25px;
+}
+
+.footer{
+  background-color: #f2e2e7;
+
+
+}
+
+.footer a{
+  padding: 12px;
+  color: white;
+  display: inline;
+  text-decoration: none;
+  background-color:#655d8a;
+  border-radius: 25px;
+  margin: 50px 5px 50px 5px;
 }
