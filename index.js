@@ -7,9 +7,10 @@ openbtn.addEventListener('click', function openForm(){
 });
 //button to close popup form
 const closebtn = $(`.close`);
-closebtn.addEventListener('click',function closeForm(){
+closebtn.addEventListener('click',closeForm);
+function closeForm(){
     document.getElementById('form-popup').style.display = "none";
-});
+}
 
 //last question: storing selected values as an array
 var values = [];
@@ -22,8 +23,8 @@ $("input[name='condition']:checked").each(function(){
     //event listener
 var submitbtn = $(`.submit`);
 submitbtn.addEventListener('click', saveResponse);
-
-
+submitbtn.addEventListener('click', closeForm);
+submitbtn.addEventListener('click',openDirections);
 
 //saving user responses as object
 let responses=[];
@@ -57,6 +58,8 @@ const saveResponse = (ev) =>{
         //saving it to local storage
        localStorage.setItem('mentalHealthSurveyResponse',JSON.stringify(responses));
 
+       //this code makes resource header appear
+       document.getElementById("resources").innerHTML +="<h2>Personalized Mental Health Resources</h2><p></p>";
         //makes the links appear in a otherwise blank list
         checkNeed = responses(responses.length - 1);
         if (checkNeed.adultOrNot == "no"){ //resources for adolescents
@@ -198,5 +201,19 @@ const saveResponse = (ev) =>{
     
 
 }
-    
+
+function openDirections(){
+    document.getElementById('directions').style.display = "block";
+}
+
+scrollbtn = $(`.take-me`);
+scrollbtn.click(function() {
+    $('html,body').animate({
+        scrollTop: $(".resources").offset().top},
+        'slow');
+});
+scrollbtn.addEventListener('click',closeDirections);
+function closeDirections(){
+    document.getElementById("directions").style.display="none";
+}
 

@@ -12,26 +12,36 @@
     <!--a navigation bar w/ a link for resources and language-->
     <div class= "navbar">
         <!--pressing the logo takes us back to the landing page-->
-         <div class="logo"><a href="index.html">LOGO</a> <!--will replace this part with our logo--></div> 
-          <a href = "#">Resources</a>
-          <a href = "#">Language</a>
+
+
+          <ul class=" floatleft">
+            <li><div class="logo"><a href="index.html">LOGO</a> <!--will replace this part with our logo--></div> </li>
+            </ul>
+  
+            <ul class="floatright">
+            <li><a href = "#">Resources</a></li>
+            <li><a href = "#">Language</a></li>
+            </ul>
+  
     </div>
 
     <div class="welcome">
       <h2>
-        Welcome to ____
+        Welcome to Piece of Mind
       </h2>
+
+      
       <div class="offerings">
           <button class="open-survey" id="survey">Take our quick self-assessment</button>
           <button class="resource"><a href="#">Resources</a></button>
-          <button class="resource"><a href="#">Crisis Line</a>/button>
+          <button class="resource"><a href="#">Crisis Line</a></button>
           <button class="resource"><a href="#">Speak with a Counselor</a></button>
         
         <img src="#" alt="img png" width="40" height="40"> 
       </div>
 
 <!--write HTML code for the popup form here-->
-      <div class="form-popup">
+      <div id ="form-popup" class="popup">
         <!--what we need: the survey questions-->
         <form action = "/actionpage.php" class="container">
           <div class="q1">
@@ -100,11 +110,15 @@
           <button type="cancel" class="close">Cancel</button>
         </form>
       </div>
-
+      <div id="directions" class="popup">
+        <h3>Thank You!</h3>
+        <p>Your personalized resource lists are ready!</p>
+        <button class="take-me">View</button>
+      </div>
 
     </div>
 
-    <div class="resources"> </div> //interactive div: the resources will appear here based on survey results
+    <div id="resources" class="resources"> </div> //interactive div: the resources will appear here based on survey results
 
     <div class="about">
       <h2>
@@ -115,6 +129,20 @@
             <br>
             Peace of Mind is a student-created platform that strives to make mental-health access and resources to be more accessible for everyone. We have provided a number of resources for people of all ages, demographics, and genders. Our quick self-assessment can provide you a starting point on which resource is best for you!
         </p>
+          
+            Peace of Mind is a student-created platform that strives to make mental-health access 
+            and resources to be more accessible for everyone. We have provided a number of 
+            resources for people of all ages, demographics, and genders. Our quick self-assessment 
+            can provide you a starting point on which resource is best for you!        </p>
+
+    </div>
+
+    <div class="footer">
+    <a href="#">Home</a>
+      <a href="#">Resources</a>
+       <a href="#">FAQ</a>
+      
+     
 
     </div>
    
